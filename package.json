@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "transport-cms",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -21,7 +21,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "144902c4-53ad-4931-86e9-32e652e912cc"
+    "uuid": "1fc37d52-67d6-45e8-8d65-f1d6b6e10243"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",

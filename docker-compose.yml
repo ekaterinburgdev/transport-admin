@@ -9,9 +9,9 @@ services:
       - .env
     volumes:
       - pgdata:/var/lib/postgresql/data
-  transport-cms:
-    container_name: transport-cms
-    image: transport-cms
+  strapi:
+    container_name: strapi
+    image: strapi
     build: .
     restart: always
     env_file:
@@ -22,7 +22,7 @@ services:
     environment:
       WAIT_HOSTS: postgres:5432
     ports:
-      - "5432:1337"
+      - "5432:5432"
 
 volumes:
   pgdata:

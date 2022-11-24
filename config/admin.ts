@@ -1,5 +1,5 @@
 export default ({ env }) => ({
   auth: {
-    secret: env('ADMIN_JWT_SECRET', '3d7ca6ed6edfb3b8fc3dc7e385467314'),
+    secret: env('ADMIN_JWT_SECRET', '7dbcc8e3de82cfa8c0ef6c87973a0ade'),
   },
 });

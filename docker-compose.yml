@@ -1,16 +1,16 @@
 version: "3.9"
 
 services:
-  postgres:
-    container_name: postgres
+  postgres_tc:
+    container_name: postgres_tc
     image: postgres:15.0-alpine
     restart: always
     env_file:
       - .env
     volumes:
       - pgdata:/var/lib/postgresql/data
-  strapi:
-    container_name: strapi
+  strapi_tc:
+    container_name: strapi_tc
     image: strapi
     build: .
     restart: always
@@ -18,9 +18,9 @@ services:
       - .env
     command: bash -c "/wait && npm run build --clean && npm run develop"
     depends_on:
-      - postgres
+      - postgres_tc
     environment:
-      WAIT_HOSTS: postgres:5432
+      WAIT_HOSTS: postgres_tc:5432
     ports:
       - "49750:49750"
 

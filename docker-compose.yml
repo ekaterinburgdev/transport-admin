@@ -16,13 +16,16 @@ services:
     restart: always
     env_file:
       - .env
-    command: bash -c "/wait && npm run build --clean && npm run develop"
+    command: sh -c "npm run build --clean && npm run develop"
     depends_on:
       - postgres_tc
     environment:
       WAIT_HOSTS: postgres_tc:5432
     ports:
       - "49750:49750"
+    volumes:
+      - src:/app/src/
 
 volumes:
   pgdata:
+  src:

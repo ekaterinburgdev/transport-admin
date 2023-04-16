@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleBackground": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "subtitleColor": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "button": {
+      "type": "string"
+    },
+    "buttonColor": {
+      "type": "string"
+    },
+    "buttonBackground": {
+      "type": "string"
+    },
+    "sizeDesktop": {
+      "type": "enumeration",
+      "enum": [
+        "L",
+        "M",
+        "S"
+      ]
+    },
+    "sizeMobile": {
+      "type": "enumeration",
+      "enum": [
+        "L",
+        "M",
+        "S"
+      ]
+    }
+  }
+}

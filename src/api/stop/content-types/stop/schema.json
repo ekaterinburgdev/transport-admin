@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stops",
+  "info": {
+    "singularName": "stop",
+    "pluralName": "stops",
+    "displayName": "stop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "stopId": {
+      "type": "string"
+    },
+    "coords": {
+      "type": "json"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "bus",
+        "tram",
+        "troll",
+        "troll-bus"
+      ]
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "card",
     "pluralName": "cards",
-    "displayName": "card"
+    "displayName": "card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,14 +31,15 @@
       "type": "string"
     },
     "backgroundImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "button": {
       "type": "string"
@@ -63,6 +65,15 @@
         "M",
         "S"
       ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "invert": {
+      "type": "boolean"
+    },
+    "priority": {
+      "type": "integer"
     }
   }
 }

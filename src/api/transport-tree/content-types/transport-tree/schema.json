@@ -4,34 +4,21 @@
   "info": {
     "singularName": "transport-tree",
     "pluralName": "transport-trees",
-    "displayName": "TransportTree",
-    "description": ""
+    "displayName": "TransportTree"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "bus",
-        "troll",
-        "tram"
-      ],
-      "required": true
+    "bus": {
+      "type": "json"
     },
-    "ids": {
-      "type": "json",
-      "required": true
+    "tram": {
+      "type": "json"
     },
-    "numbers": {
-      "type": "json",
-      "required": true
-    },
-    "numberToId": {
-      "type": "json",
-      "required": true
+    "troll": {
+      "type": "json"
     }
   }
 }

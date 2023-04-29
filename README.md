@@ -1,6 +1,21 @@
 # Transport CMS
 
-Transport data admin using [Strapi](https://strapi.io/)
+Transport data CMS using [Strapi](https://strapi.io/)
+
+**[transport-cms.ekaterinburg.io](https://transport-cms.ekaterinburg.io/)**
+
+## API
+
+**Mainpage**
+- `/api/articles` 
+- `/api/cards` 
+- `/api/marquees`
+
+**Map**
+- `/api/stops`
+- `/api/transport-trees`
+
+## Development
 
 1. Install [Docker](https://docs.docker.com/engine/install/)
 

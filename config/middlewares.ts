@@ -1,7 +1,15 @@
 export default [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: ['http://localhost:3000', 'transport.ekaterinburg.city', '*.vercel.app'],
+      keepHeaderOnError: true,
+    }
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',

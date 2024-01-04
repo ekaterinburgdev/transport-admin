@@ -4,8 +4,7 @@
   "info": {
     "singularName": "transport-tree",
     "pluralName": "transport-trees",
-    "displayName": "TransportTree",
-    "description": ""
+    "displayName": "TransportTree"
   },
   "options": {
     "draftAndPublish": true

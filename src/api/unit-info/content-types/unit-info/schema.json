@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unit_infos",
+  "info": {
+    "singularName": "unit-info",
+    "pluralName": "unit-infos",
+    "displayName": "UnitInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageUrl": {
+      "type": "text"
+    },
+    "boardNumber": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "factoryNumber": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "factory": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "bus",
+        "tram",
+        "troll"
+      ]
+    }
+  }
+}

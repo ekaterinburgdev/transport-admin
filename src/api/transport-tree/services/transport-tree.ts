@@ -1,5 +1,5 @@
 /**
- * transport-tree service.
+ * transport-tree service
  */
 
 import { factories } from '@strapi/strapi';

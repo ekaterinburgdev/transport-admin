@@ -1,5 +1,5 @@
 /**
- *  transport-tree controller
+ * transport-tree controller
  */
 
 import { factories } from '@strapi/strapi'

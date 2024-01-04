@@ -13,22 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "titleColor": {
-      "type": "string"
-    },
-    "titleBackground": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "string"
-    },
-    "subtitleColor": {
-      "type": "string"
-    },
-    "backgroundColor": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "backgroundImage": {
       "type": "media",
@@ -41,39 +27,50 @@
         "audios"
       ]
     },
-    "button": {
-      "type": "string"
-    },
-    "buttonColor": {
-      "type": "string"
-    },
-    "buttonBackground": {
-      "type": "string"
-    },
-    "sizeDesktop": {
-      "type": "enumeration",
-      "enum": [
-        "L",
-        "M",
-        "S"
-      ]
-    },
-    "sizeMobile": {
-      "type": "enumeration",
-      "enum": [
-        "L",
-        "M",
-        "S"
-      ]
-    },
     "url": {
       "type": "string"
     },
-    "invert": {
-      "type": "boolean"
-    },
     "priority": {
       "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "public",
+        "car",
+        "pedestrian",
+        "other"
+      ]
+    },
+    "dynamicId": {
+      "type": "string"
+    },
+    "headerCaption": {
+      "type": "string"
+    },
+    "footerCaption": {
+      "type": "string"
+    },
+    "backgroundImageHover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titleBackgroundColor": {
+      "type": "string"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "large",
+        "small"
+      ]
     }
   }
 }
